@@ -78,6 +78,5 @@ class YukkiBot(Client):
             self.name = get_me.first_name
         LOGGER(__name__).info(f"MusicBot Started as {self.name}")
 
-
 if sys.platform != "win32":
-uvloop.install()
+    uvloop.install()
